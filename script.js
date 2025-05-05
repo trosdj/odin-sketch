@@ -21,15 +21,33 @@ function fillRow() {
   }
 
   return row;
-}
+};
 
 function fillGrid() {
   for (let i = 0; i <= 16; i++) {
     grid.appendChild(fillRow());
   }
-}
+};
 
-fillGrid()
+
+fillGrid();
 
 // Add grid to container
 container.appendChild(grid);
+
+let squares = document.querySelectorAll('.grid--square');
+let opacity = 0.5;
+
+squares.forEach(function(elem) {
+  elem.addEventListener('mouseover', () => {
+    elem.style.backgroundColor = 'black';
+
+    if (opacity < 1) {
+      opacity += 0.1;
+    }
+
+    console.log(opacity);
+    elem.style.opacity = opacity.toFixed(1);
+  })
+
+});
