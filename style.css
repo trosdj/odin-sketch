@@ -7,3 +7,20 @@
   margin: 15rem auto;
   border: 2px solid red;
 }
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.grid--square {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border: 2px solid blue;
+}
