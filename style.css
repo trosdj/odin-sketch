@@ -1,0 +1,9 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 15rem auto;
+  border: 2px solid red;
+}
